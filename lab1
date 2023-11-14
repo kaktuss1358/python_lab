@@ -1,0 +1,14 @@
+def decimal_to_binary(decimal_number):
+    if decimal_number < 0:
+        return "Будь ласка, введіть додатне десяткове число."
+    elif decimal_number == 0:
+        return "0b0"
+    else:
+        binary_representation = bin(decimal_number)
+        return binary_representation
+
+# Приклад використання:
+decimal_number = int(input("Введіть десяткове число: "))
+binary_result = decimal_to_binary(decimal_number)
+
+print(f"Двійкове представлення числа {decimal_number}: {binary_result}")

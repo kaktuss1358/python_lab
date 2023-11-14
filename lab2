@@ -1,0 +1,22 @@
+def draw_penguin():
+    penguin = [
+        "    _~_   ",
+        "   (o o)  ",
+        "  /  V  \\ ",
+        " /(  _  )\\",
+        "   ^^ ^^  "
+    ]
+    return penguin
+
+def draw_penguins(n):
+    for _ in range(n):
+        for line in draw_penguin():
+            print(line, end="  ")  # Додаємо пробіл для порожнього стовпця між пінгвінами
+        print()  # Перехід на новий рядок після кожного пінгвіна
+
+# Введення кількості пінгвінів від 1 до 9
+n = int(input("Введіть кількість пінгвінів (від 1 до 9): "))
+if 1 <= n <= 9:
+    draw_penguins(n)
+else:
+    print("Будь ласка, введіть число від 1 до 9.")

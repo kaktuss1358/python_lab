@@ -1,1 +1,20 @@
+def print_letter_P(symbol):
+    # Літера "Р" висотою 5 рядків
+    letter_P = [
+        f"{symbol}{symbol}{symbol}{symbol}",
+        f"{symbol}   {symbol}",
+        f"{symbol}   {symbol}",
+        f"{symbol}{symbol}{symbol}{symbol}",
+        f"{symbol}"
+    ]
+    
+    # Виведення літери "Р"
+    for line in letter_P:
+        print(line)
+
+# Введення символу від користувача
+user_symbol = input("Введіть символ для відображення літери 'Р': ")
+
+# Виведення літери "Р" за допомогою введеного символу
+print_letter_P(user_symbol)
 
